@@ -19,5 +19,10 @@ def create_code(num, length):
 
 
 if __name__ == '__main__':
+    chars = 'abcdefghijklmnopqrstuvwxyz'
     res = create_code(100, 20)
-    print(res)
+    for code in res:
+        print('%s'%code)
+        # print(code)
+    # print(res)
+    print(chars.upper())
