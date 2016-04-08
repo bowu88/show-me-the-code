@@ -38,11 +38,11 @@ def get_msg(phone):
 	# t = reduce(lambda x, y: x + y, phone)
 	t = 0
 	for i in phone:
-		t += i
+		t = t + i
 	return length, t
 
 
 if __name__ == '__main__':
 	call, becalled = read_xls('call_record.xls')
-	print('一共拨打%s个电话，总时长%s'%get_msg(call))
+	print('一共拨打%s个电话，总时长%s' % get_msg(call))
 	print('一共接听%s个电话，总时长%s' % get_msg(becalled))
